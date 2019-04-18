@@ -7,10 +7,14 @@ image_resource:
     repository: datianshi/platformautomation
 
 inputs:
-- name: sample-input
+- name: pipeline
+- name: input
+
+outputs:
+- name: output-name-address-json
 
 run:
-  path: sample-/tasks/task2/task.sh
+  path: pipeline/tasks/task2/task.sh
 
 params:
-  PASSWORD:
+  ADDRESS:

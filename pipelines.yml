@@ -1,6 +1,6 @@
 ---
 resources:
-- name: my-git-repo
+- name: my-pipelines
   type: git
   source:
     uri: https://github.com/datianshi/concourse-task-modular
@@ -8,9 +8,21 @@ resources:
 jobs:
 - name: sample-job
   plan:
+  - get: my-pipelines
   - task: task1
-    file: tasks/task1/task.yml
+    file: my-pipelines/tasks/task1/task.yml
+    input_mapping:
+      pipeline: my-pipelines
     params:
+      NAME: shaozhen
       PASSWORD: mypassword
   - task: task2
-    file: tasks/task2/task.yml
+    file: my-pipelines/tasks/task2/task.yml
+    input_mapping:
+      pipeline: my-pipelines
+      input: output-name-json
+  - task: task3
+    file: my-pipelines/tasks/task3/task.yml
+    input_mapping:
+      pipeline: my-pipelines
+      input: output-name-address-json

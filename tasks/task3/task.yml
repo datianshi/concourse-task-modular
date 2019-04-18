@@ -8,12 +8,7 @@ image_resource:
 
 inputs:
 - name: pipeline
-outputs:
-- name: output-name-json
+- name: input
 
 run:
-  path: pipeline/tasks/task1/task.sh
-
-params:
-  PASSWORD:
-  NAME:
+  path: pipeline/tasks/task3/task.sh

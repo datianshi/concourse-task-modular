@@ -1,9 +1,9 @@
 #!/bin/bash
 
-set -e
+set -ex
 
-name=$(cat sample-input/input.json | jq -r .name)
-echo $name
+
+echo $NAME
 echo $PASSWORD
 
 json_template=$(cat << EOF
@@ -15,9 +15,9 @@ EOF
 )
 
 json=$(jq -n \
-      --arg name "$name" \
+      --arg name "$NAME" \
       --arg password "$PASSWORD" \
       "$json_template"
 )
 
-echo $json > sample-output/output.json
+echo $json > output-name-json/name-password.json
