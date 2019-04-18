@@ -1,7 +1,7 @@
-## Make the tasks as different modulars
+## Why
 
-* Task can be developed in parallel
-* Task can be executed/accepted by PM through concourse execute command
+* Tasks can be developed in parallel
+* Tasks can be executed/accepted by PM through concourse execute command
 * Chain the tasks with input -> task1 -> output -> task2 -> input ....
 
 ## About this example
