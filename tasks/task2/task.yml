@@ -1,0 +1,16 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: datianshi/platformautomation
+
+inputs:
+- name: sample-input
+
+run:
+  path: sample-/tasks/task2/task.sh
+
+params:
+  PASSWORD:

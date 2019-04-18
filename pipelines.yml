@@ -1,0 +1,16 @@
+---
+resources:
+- name: my-git-repo
+  type: git
+  source:
+    uri: https://github.com/datianshi/concourse-task-modular
+
+jobs:
+- name: sample-job
+  plan:
+  - task: task1
+    file: tasks/task1/task.yml
+    params:
+      PASSWORD: mypassword
+  - task: task2
+    file: tasks/task2/task.yml
