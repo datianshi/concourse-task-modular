@@ -1,10 +1,10 @@
-##Make the tasks as different modulars
+## Make the tasks as different modulars
 
 * Task can be developed in parallel
 * Task can be executed/accepted by PM through concourse execute command
 * Chain the tasks with input -> task1 -> output -> task2 -> input ....
 
-##Example
+## About this example
 
 * Demo Idea
 
@@ -25,7 +25,9 @@ name/address parameters|Generate JSON|{"name" : "shaozhen", "password":"mypasswo
 
   ```
   cat /tmp/test/name-password.json
-{ "name": "shaozhen", "password": "mypassword" }
+  { "name": "shaozhen", "password": "mypassword" }
   ```
 
-* ```fly -t pvd sp -p collaboration-example -c pipelines.yml```
+* Run the pipeline
+
+ ```fly -t pvd sp -p collaboration-example -c pipelines.yml```
