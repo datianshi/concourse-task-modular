@@ -21,6 +21,8 @@ jobs:
     input_mapping:
       pipeline: my-pipelines
       input: output-name-json
+    params:
+      ADDRESS: Texas
   - task: task3
     file: my-pipelines/tasks/task3/task.yml
     input_mapping:

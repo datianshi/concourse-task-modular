@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo input/output.json
+echo input/name-password-address.json
