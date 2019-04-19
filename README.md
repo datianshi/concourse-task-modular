@@ -11,7 +11,7 @@
 It is like functional programming, which treats each task as an aggregation point.
 
 
-Input|task1|output/input-of-task2|task2|output/input-of-task3|task3
+Input|task1|output/input-of-task2|task2|output-previous-task(s)/input-of-task3|task3
 --- | --- | --- | --- |--- |---
 name/address parameters|Generate JSON|{"name" : "shaozhen", "password":"mypassword"}|Generate Json + Address|{"name" : "shaozhen", "password":"mypassword", "address": "This is my address"}|print out data
 
