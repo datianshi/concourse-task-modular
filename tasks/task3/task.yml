@@ -8,7 +8,9 @@ image_resource:
 
 inputs:
 - name: pipeline
-- name: input
+- name: input1
+- name: input2
+
 
 run:
   path: pipeline/tasks/task3/task.sh

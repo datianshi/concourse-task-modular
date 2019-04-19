@@ -27,4 +27,5 @@ jobs:
     file: my-pipelines/tasks/task3/task.yml
     input_mapping:
       pipeline: my-pipelines
-      input: output-name-address-json
+      input1: output-name-json
+      input2: output-name-address-json

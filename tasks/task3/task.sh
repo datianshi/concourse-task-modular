@@ -1,3 +1,4 @@
 #!/bin/bash
 
-cat input/name-password-address.json
+cat input1/name-password.json
+cat input2/name-password-address.json
